@@ -8,10 +8,11 @@ def time_convert(sec):
     mins = mins % 60
     return (int(hours), int(mins), int(sec))
 
-time_lapsed = 0
-while True:
-    (hours, mins, sec) = time_convert(time_lapsed)
-    print(f"Time Lapsed = {hours:02}:{mins:02}:{sec:02}")
-    sys.stdout.write("\033[F")
-    time.sleep(1)
-    time_lapsed = time_lapsed + 1
+if __name__ == '__main__':
+    time_lapsed = 0
+    while True:
+        (hours, mins, sec) = time_convert(time_lapsed)
+        print(f"Time lapsed = {hours:02}:{mins:02}:{sec:02}")
+        sys.stdout.write("\033[F")
+        time.sleep(1)
+        time_lapsed = time_lapsed + 1
