@@ -1,3 +1,12 @@
 
+public class Stopwatch {
+    private int timeLapsed;
 
-public cla
+    public Stopwatch() {
+        timeLapsed = 0;
+    }
+
+    public void start() {
+        
+    }
+}

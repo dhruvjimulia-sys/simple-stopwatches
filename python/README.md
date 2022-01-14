@@ -1,7 +1,7 @@
 
-# Haskell Stopwatch
+# Python Stopwatch
 ## Prerequisites
-In order to run the program, you need to install Python. This can be installed using the following command on Linux machines:
+In order to run the program, you need to install Python. This can be installed using the following command on most UNIX-based systems:
 ```
 $ sudo apt install python3
 ```
