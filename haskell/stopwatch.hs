@@ -1,3 +1,5 @@
+module Stopwatch where
+
 import Control.Concurrent
 
 convertTime :: Int -> (Int, Int, Int)
@@ -11,13 +13,17 @@ showTwoDigit i
   = show q ++ show r
   where (q, r) = quotRem i 10
 
+clearLine :: IO ()
+clearLine
+  = putStr "\ESC[2K\ESC[0G"
+
 printCurrentTime :: Int -> IO String
 printCurrentTime t
   = do
     (h, m, s) <- return $ convertTime t
     putStr (showTwoDigit h ++ ":" ++ showTwoDigit m ++ ":" ++ showTwoDigit s) 
     threadDelay (10 ^ 6)
-    putStr "\ESC[2K\ESC[0G"
+    clearLine
     printCurrentTime (t + 1)
 
 main = do printCurrentTime 0
