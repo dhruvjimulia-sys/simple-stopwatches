@@ -1,7 +1,7 @@
 import time
 import sys
 
-def time_convert(sec):
+def convert_secs(sec):
     mins = sec // 60
     sec = sec % 60
     hours = mins // 60
@@ -11,7 +11,7 @@ def time_convert(sec):
 if __name__ == '__main__':
     time_lapsed = 0
     while True:
-        (hours, mins, sec) = time_convert(time_lapsed)
+        (hours, mins, sec) = convert_secs(time_lapsed)
         print(f"Time lapsed = {hours:02}:{mins:02}:{sec:02}")
         sys.stdout.write("\033[F")
         time.sleep(1)
