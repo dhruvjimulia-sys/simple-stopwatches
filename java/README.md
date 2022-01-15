@@ -4,7 +4,7 @@ In order to run the program, you need to install a Java compiler (javac) and the
 ```
 $ sudo apt install openjdk-17-jdk-headless
 ```
-Note: This stopwatch was tested on
+Note: This stopwatch was tested on javac 17.0.1 and java 17.0.1
 ## Getting Started
 To run the Java program, execute the shell script `run.sh` using the following command:
 ```
