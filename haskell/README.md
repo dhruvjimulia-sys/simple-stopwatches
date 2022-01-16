@@ -1,17 +1,14 @@
 
 # Haskell Stopwatch
 ## Prerequisites
-In order to run the program, you need to install GHC. This can be installed using the following command on Linux machines:
-```
-$ sudo apt install ghc
-```
+To run the program, you will need to install the Glasgow Haskell Compiler. This can be installed by following the instructions in the site below.
+
+https://www.haskell.org/downloads/
+
 Note: This stopwatch was tested on GHC version 8.6.5 
 ## Getting Started
-To begin with, compile the stopwatch.hs file with the following command:
+
+To run the stopwatch program, you can execute the following command:
 ```
-$ ghci stopwatch.hs
-```
-Once the Haskell code has been compiled, you can start the stopwatch by calling the main method from the ghci prompt:
-```
-*Stopwatch> :main
+$ runghc stopwatch.hs
 ```
